@@ -1,0 +1,137 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+[character]
+success_symbol = "[%](bold green)"
+error_symbol = "[%](bold red)"
+
+[git_branch]
+symbol = " "
+
+[git_commit]
+tag_symbol = '  '
+
+[golang]
+symbol = " "
+disabled = true
+
+[gradle]
+symbol = " "
+disabled = true
+
+[guix_shell]
+symbol = " "
+disabled = true
+
+[haskell]
+symbol = " "
+disabled = true
+
+[haxe]
+symbol = " "
+disabled = true
+
+[hg_branch]
+symbol = " "
+
+[hostname]
+ssh_symbol = " "
+disabled = true
+
+[java]
+symbol = " "
+disabled = true
+
+[julia]
+symbol = " "
+disabled = true
+
+[kotlin]
+symbol = " "
+disabled = true
+
+[lua]
+symbol = " "
+disabled = true
+
+[memory_usage]
+symbol = "󰍛 "
+disabled = true
+
+[meson]
+symbol = "󰔷 "
+disabled = true
+
+[nim]
+symbol = "󰆥 "
+disabled = true
+
+[nix_shell]
+symbol = " "
+disabled = true
+
+[nodejs]
+symbol = " "
+disabled = true
+
+[ocaml]
+symbol = " "
+disabled = true
+
+[package]
+symbol = "󰏗 "
+disabled = true
+
+[perl]
+symbol = " "
+disabled = true
+
+[php]
+symbol = " "
+disabled = true
+
+[pijul_channel]
+symbol = " "
+
+[pixi]
+symbol = "󰏗 "
+disabled = true
+
+[python]
+symbol = " "
+disabled = true
+
+[rlang]
+symbol = "󰟔 "
+disabled = true
+
+[ruby]
+symbol = " "
+disabled = true
+
+[rust]
+symbol = "󱘗 "
+disabled = true
+
+[scala]
+symbol = " "
+disabled = true
+
+[status]
+symbol = " "
+disabled = true
+
+[swift]
+symbol = " "
+disabled = true
+
+[xmake]
+symbol = " "
+disabled = true
+
+[zig]
+symbol = " "
+disabled = true
+
+[directory]
+read_only = " "
+

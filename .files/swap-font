@@ -1,0 +1,6 @@
+#!/bin/fish
+
+mv $HOME/.termux/font.ttf $HOME/.termux/temp
+mv $HOME/.termux/font.ttf.bak $HOME/.termux/font.ttf
+mv $HOME/.termux/temp $HOME/.termux/font.ttf.bak
+termux-reload-settings
