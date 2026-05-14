@@ -1,4 +1,4 @@
 ## My Termux
 
-[screenshot](./screenshot.jpg)
+![screenshot](./screenshot.jpg)
 
