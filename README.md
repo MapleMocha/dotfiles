@@ -1,4 +1,1 @@
-## My Termux
-
-![screenshot](./screenshot.jpg)
-
+## dotfile
