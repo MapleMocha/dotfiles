@@ -3,16 +3,18 @@ set -eu
 
 mkdir -p $HOME/.termux/
 
+DIR=/data/data/com.termux/files/home/dotfiles/Termux
+
 cat > /data/data/com.termux/files/usr/etc/apt/sources.list << EOF
 deb https://mirrors.bfsu.edu.cn/termux/termux-packages-24 stable main
 EOF
-apt update
-yes | apt upgrade
+
+apt update && yes | apt upgrade
 
 rm ~/files
 ln -s /data/data/com.termux/files $HOME
 rm -f $HOME/.hushlogin && touch $HOME/.hushlogin
-cp $HOME/dotfiles/.files/termux.properties $HOME/dotfiles/.files/colors.properties $HOME/.termux/
+cp $DIR/.files/termux.properties $DIR/.files/colors.properties $HOME/.termux/
 
 apt install -y fish which gh nmap fzf wget curl fd nodejs
 apt install -y zoxide tree htop openssh tig bat ripgrep jq yq
@@ -26,7 +28,7 @@ apt install -y gettext rust-analyzer lua-language-server yazi lld mandoc
 
 chsh -s fish
 mkdir -p $HOME/.config/
-cp $HOME/dotfiles/.files/starship.toml $HOME/.config/
+cp $DIR/.files/starship.toml $HOME/.config/
 mkdir -p $HOME/.config/fish/
 
 cat > $HOME/.config/fish/config.fish << EOF
@@ -48,11 +50,11 @@ EOF
 
 git config --global init.defaultBranch main
 mkdir -p $HOME/.config/bat/themes/
-cp $HOME/dotfiles/.files/"Catppuccin Mocha.tmTheme" $HOME/.config/bat/themes/
+cp $DIR/.files/"Catppuccin Mocha.tmTheme" $HOME/.config/bat/themes/
 mv $PREFIX/bin/pipes.sh $PREFIX/bin/pipes && chmod 755 $PREFIX/bin/pipes
 
-cp $HOME/dotfiles/.files/font.ttf $HOME/dotfiles/.files/font.ttf.bak $HOME/.termux/
-cp $HOME/dotfiles/.files/swap-font $PREFIX/bin/ && chmod 755 $PREFIX/bin/swap-font
+cp $DIR.files/font.ttf $DIR.files/font.ttf.bak $HOME/.termux/
+cp $DIR.files/swap-font $PREFIX/bin/ && chmod 755 $PREFIX/bin/swap-font
 
 pkill -9 -f com.termux # 😈
 
